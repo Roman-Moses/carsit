@@ -1,0 +1,475 @@
+
+body{
+    margin: 0;
+    padding: 0;
+}
+
+.header{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: #fff;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    box-shadow: 2px 5px 2px grey;
+    z-index: 50;
+}
+
+.header .logo h1{
+    font-weight: 550;
+    margin-left: 20px;
+
+}
+.header span{
+    color: blueviolet;
+    text-transform: capitalize;
+}
+.header nav a{
+    text-decoration: none;
+    text-transform: uppercase;
+    color: black;
+    font-size: 1.3;
+    font-weight: 500;
+    margin: 0 1rem;
+    padding: 10px;
+}
+.header nav a:hover{
+    background-color: blueviolet;
+    color: aliceblue;
+  
+}
+.header .btn{
+    background-color: blueviolet;
+    padding: 10px;
+    color: aliceblue;
+    text-decoration: none;
+    font-size: 1.2rem;
+    border-radius: 10px;
+    box-shadow: 2px 5px 2px gray;
+    margin-right: 20px;
+}
+.header .btn:hover{
+    border-radius: 0;
+    scale: 1.1;
+
+}
+.home{
+    margin-top: 9rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 1rem;
+    width: 100%;
+}
+.home .content{
+    display: flex;
+    flex-flow: column;
+    align-items: start;
+    width: 50%;
+    padding: 1rem;
+}
+.home .content h1{
+    font-size: 3rem;
+    text-transform: capitalize;
+    margin-bottom: 1rem;
+    font-weight: 600;
+    text-shadow: 2px 5px 4px grey;
+}
+.home span{
+    color: blueviolet;
+}
+.home .content p{
+    line-height: 2;
+    text-transform: lowercase;
+    font-size: 1.2rem;
+    margin: 1rem 0;
+
+}
+
+.home .btn{
+    background-color: blueviolet;
+    padding: 10px;
+    color: aliceblue;
+    text-decoration: none;
+    font-size: 1.2rem;
+    border-radius: 10px;
+    box-shadow: 2px 5px 2px gray;
+    margin-right: 20px;
+}
+.home .btn:hover{
+    border-radius: 0;
+    scale: 1.1;
+}
+.cars{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-flow: column;
+    padding: 2rem 5%;
+    min-height: 100vh;
+}
+.cars span{
+    color: blueviolet;
+    font-size: 1.5rem;
+    text-transform: capitalize;
+    font-weight: 700;
+}
+.cars h3{
+    font-size: 2.5rem;
+    text-transform: uppercase;
+    margin-bottom: 1rem;
+}
+.cars p{
+    font-size: 1.3rem;
+    text-transform: uppercase;
+    margin-bottom: 1rem;
+}
+.cars .box-container{
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    gap: 2rem;
+    margin: 2rem 0;
+}
+.cars .box{
+    position: relative;
+    
+}
+.cars .box img{
+    position: relative;
+    height: 18rem;
+    width: 20rem;
+    object-fit: cover;
+    border-radius: 1rem;
+    box-shadow: .1rem .5rem 1rem #999;
+}
+.cars .box a{
+    position: absolute;
+    bottom: 1rem;
+    left: 1rem;
+    background-color:black;
+    color: aliceblue;
+    padding: 1rem 2rem;
+    font-weight: 600;
+    font-size: 1.1rem;
+    border-radius: 1rem;
+    text-decoration: none;
+}
+.cars img:hover{
+    scale: 1.1;
+
+}
+.cars .box:hover a{
+    background-color: blueviolet;
+}
+.about {
+    
+display: flex;
+flex-wrap: wrap;
+align-items: center;
+justify-content: center;
+gap: 40px;
+padding: 2rem 5%;
+}
+.about .content{
+    display: flex;
+    align-items: start;
+    justify-content: center;
+    flex-direction: column;
+}
+.about .abt{
+    color: blueviolet;
+    text-transform: uppercase;
+    font-size: 1.6rem;
+    font-weight: 600;
+}
+.about h3{
+    text-transform: capitalize;
+    font-size: 2.3rem;
+}
+.about img{
+    border-radius: 40px;
+}
+.about p{
+    line-height: 2;
+}
+.about .btn{
+    background-color:blueviolet;
+    color: aliceblue;
+    text-decoration: none;
+    padding:10px ;
+    box-shadow: 2px 5px 2px gray;
+}
+.about .btn:hover{
+    background-color: black;
+    border-radius: 2rem;
+
+}
+.review{
+    display: flex;
+    flex-flow: column;
+    align-items: center;
+    justify-content: center;
+}
+.review .abt{
+    color: blueviolet;
+    text-transform: uppercase;
+    font-size: 1.6rem;
+    font-weight: 600;
+    
+}
+.review .bx-continer{
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    gap: 2rem;
+    margin: 2rem 0;
+}
+.review p{
+    justify-content: center;
+    align-items: center;
+}
+.review .bx{
+    align-items: center;
+    justify-content: center;
+    display: flex;
+    flex-flow: column;
+    flex-wrap: wrap;
+    padding: 1rem;
+    background-color: blueviolet;
+    width:350px;
+}
+.review img{
+    width: 8rem;
+    height: 8rem;
+    object-fit: cover;
+    border-radius: 50%;
+    border: solid 3px whitesmoke;
+}
+.review .bx:hover{
+    background-color: black;
+    color: #fff;
+    border-radius: 40px;
+}
+.review h3{
+    text-transform: uppercase;
+}
+.review .fa-solid{
+    color: gold;
+    font-size: 1.2rem;
+}
+.review .fa-regular{
+    color:gold;
+    font-size: 1.2rem;
+}
+footer{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-flow: column;
+    background-color: rgb(65, 65, 65);
+    padding: 1rem;
+    margin-bottom: 2rem;
+    position: sticky;
+}
+footer .bx-container{
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+}
+footer .bx{
+    display: flex;
+    flex-flow: column;
+    align-items: start;
+    gap: 1rem;
+    color: aliceblue;
+}
+footer a{
+    color: aliceblue;
+    font-size: 1.2rem;
+    text-decoration: none;
+    color: #999;
+    text-transform: capitalize;
+}
+footer i{
+    padding: 10px;
+    font-size: 1.4rem;
+    cursor: pointer;
+}
+footer i:hover{
+    color: blueviolet;
+}
+footer .logo h1{
+    font-weight: 550;
+    margin-left: 20px;
+
+}
+footer span{
+    color: blueviolet;
+    text-transform: capitalize;
+}
+footer h3{
+    font-size: 1.5rem;
+    text-transform: uppercase;
+}
+footer a:hover{
+    color: blueviolet;
+    text-decoration: underline;
+    padding-left: 15px;
+}
+footer .noma{
+    text-transform: capitalize;
+    margin: 2rem 0;
+    color: aliceblue;
+    font-size: 1.5rem;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+@media only screen and (max-width:850px){
+    html{
+        font-size: 80%;
+    }
+    .home{
+        display: flex;
+        flex-wrap: wrap;
+        flex-direction: column-reverse;
+        margin-left: 8px;
+    }
+    .home image{
+        width: 100%;
+        justify-content: center;
+        align-items: center;
+    }
+    .home .content{
+        width: 100%;
+    }
+    .header .btn{
+        display: none;
+    }
+    .header{
+        position: relative;
+    }
+    .header nav{
+        position: absolute;
+        margin-top: 120px;
+
+    }
+   
+}
+
+
+
+
+
+
+
+@media only screen and (max-width:410px){
+    html{
+        font-size: 90%;
+    }
+    .home{
+        display: flex;
+        flex-wrap: wrap;
+        flex-direction: column-reverse; 
+    }
+    .home .image img{
+        width:90%;
+    
+    }
+    .home .content{
+        width: 90%;
+    }
+    .header .btn{
+        display: none;
+    }
+    .header{
+        position: relative;
+    }
+
+    .header nav{
+        position: absolute;
+        margin-top: 120px;
+
+    }
+    .about img{
+        height: 350px;
+    }
+    .review .bx{
+        width: 300px;
+    }
+    .review p{
+        margin: 10px;
+    }
+    
+    
+}
+@media only screen and (max-width:524px) {
+    html{
+        font-size: 90%;
+    }
+    .home{
+        display: flex;
+        flex-wrap: wrap;
+        flex-direction: column-reverse; 
+    }
+    .home .image img{
+        width:90%;
+    
+    }
+    .home .content{
+        width: 90%;
+    }
+    .header .btn{
+        display: none;
+    }
+    .header{
+        position: relative;
+    }
+    .header nav{
+        position: absolute;
+        margin-top: 120px;
+
+    }
+    footer .bx-container{
+        display: flex;
+        flex-flow: column;
+        justify-content: start;
+    }
+    
+}
+@media only screen and (max-width:380px){
+    .header nav a{
+        padding: 10px;
+    }
+    
+}
